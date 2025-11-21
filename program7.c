@@ -1,10 +1,10 @@
-// WAP to calculat sun of two integers.Number are taken from user through keyboard.
+// WAP to print to input an ASCII code from the user and print its corresponding character
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    printf("Enter two numbers : ");
-    scanf("%d%d",&a,&b);
-    printf("Sum of two integers: %d",a+b);
+    char code;
+    printf("Enter a ASCII code of Character: ");
+    scanf("%d",&code);
+    printf("character is :%c",code);
     return 0;
 }

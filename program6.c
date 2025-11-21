@@ -1,7 +1,10 @@
-// WAP to print "Teacher's Day" on the sreen(Remember to print in double quotes single).
+// WAP to input a character from the user and print its ASCII code.
 #include<stdio.h>
 int main()
 {
-    printf("\"Teacher's Day\"");
+    char ch;
+    printf("Enter a Character: ");
+    scanf("%c",&ch);
+    printf("ASCII code of Character:%d",ch);
     return 0;
 }

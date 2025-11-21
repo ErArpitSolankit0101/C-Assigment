@@ -1,14 +1,15 @@
-/*
-WAP to calculate area of a circle.Take radius odf circle from user as input and print the result in below given format
+/* 
+WAP to take time as an input in below given format and convert the date for format and display the result as given below
+input : "HH:MM";
+output: "HH hour MM minutes";
 */
 #include<stdio.h>
 int main()
 {
-    float r,ar;
-    const float pi =3.14;  
-    printf("Enter a radius of circle:");
-    scanf("%f",&r);
-    ar=pi*r*r;
-    printf("Area of circle is %.2f having the radius %0.2f",ar,r);
+    int h,m;
+    printf("Input formate HH:MM: ");
+    scanf("%d:%d",&h,&m);
+    printf("Output formate HH hour MM minutes\n");
+    printf("%d hour %d minutes",h,m);
     return 0;
 }
