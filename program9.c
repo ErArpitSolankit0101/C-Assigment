@@ -1,14 +1,9 @@
-// WAP to swap values of two int variable without using  3rd var and arithmetic operators,
+// What will be the value stored in the variable x after executing following statement:
+// x=!2>-2
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    printf("Enter two number:");
-    scanf("%d%d",&a,&b);
-    printf("before swapping: %d %d",a,b);
-    a=a^b;
-    b=a^b;
-    a=a^b;
-    printf("\nAfter swapping: %d %d",a,b);
-    return 0;
+  int x=!2>-2; //1>-2==1 true
+  printf("%d",x);
+  return 0;
 }

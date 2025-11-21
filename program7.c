@@ -1,14 +1,12 @@
-// WAP to swap values of two int variable without using a 3rd variable.
+// Write a program to take a three digit number from the user and rotate its digits by
+// one position towards the right.
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    printf("Enter two number:");
-    scanf("%d%d",&a,&b);
-    printf("before swapping: %d %d",a,b);
-    a=a+b;
-    b=a-b;
-    a=a-b;
-    printf("\nAfter swapping: %d %d",a,b);
-    return 0;
+  int a,b;
+  printf("enter a number:");
+  scanf("%d",&a);
+  b= a%10*100+a/10;
+  printf("Rotate number is: %d",b);
+  return 0;
 }

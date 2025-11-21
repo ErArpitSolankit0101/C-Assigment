@@ -1,14 +1,14 @@
-/* 
-WAP with one char type variable.Assign 'A' in the variable.Now change the value of variable from 'A' to 'B' using increment operator
-*/
+//  Write a program to print size of an int, a float, a char and a double type variable
 #include<stdio.h>
 int main()
 {
-    printf("print A\n");
-    char c='A';
-    printf("%c",c);
-    printf("\nprint B by increment operator");
-    char b= c++;
-    printf("\n%c",c);
+    int a=10;
+    float c=10.9;
+    char x='S';
+    double z=13.8;
+    printf("\n int:%d",sizeof(a));
+    printf("\n folat:%d",sizeof(c));
+    printf("\n char : %d",sizeof(x));
+    printf("\n double:%d",sizeof(z));
     return 0;
 }

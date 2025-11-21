@@ -1,14 +1,13 @@
-// WAP to swap values of two int variable
+/*Assume price of 1 USD is INR 89.61 Write a program to take the amount in INR
+and convert it into USD.
+*/
 #include<stdio.h>
 int main()
 {
-    int a,b,c;
-    printf("Enter two number:");
-    scanf("%d%d",&a,&b);
-    printf("before swapping: %d %d",a,b);
-    c=a;
-    a=b;
-    b=c;
-    printf("\nAfter swapping: %d %d",a,b);
-    return 0;
+  float r,d;
+  printf("Enter amount in INR:");
+  scanf("%f",&r);
+   d= r/89.61;
+  printf("%.2f INR into %0.2f USD.",r,d);
+  return 0;
 }

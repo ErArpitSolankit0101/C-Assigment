@@ -1,11 +1,16 @@
-// WAP to print unit digit of a given number.
+/*
+Write a program to make the last digit of a number stored in a variable as zero.
+(Example - if x=2345 then make it x=2340)
+*/
 #include<stdio.h>
 int main()
 {
-    int num;
-    printf("Enter a number");
-    scanf("%d",&num);
-    int res= num%10;
-    printf("Unit Digit of a %d is %d",num,res);
+    int a,b,c;
+    printf("Enter a number:");
+    scanf("%d",&a);
+    b= a/10; //b=a/10*10;
+    c=b*10;
+    printf("%d",c); //print b
+    
     return 0;
 }

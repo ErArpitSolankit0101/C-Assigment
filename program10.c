@@ -1,12 +1,10 @@
-// WAP to swap values of two int variable in single line arithmetic expression.
+/*what will be the value stored in the variable x after executing following statement:
+x=3<0&&5>0;
+*/
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    printf("Enter two numbers:");
-    scanf("%d%d",&a,&b);
-    printf("before swapping: %d %d",a,b);
-    a=a+b-(b=a);
-    printf("\nAfter swapping: %d %d",a,b);
-    return 0;
+  int x=3<0&&5>0;; // f and t = f(0)
+  printf("%d",x);
+  return 0;
 }
