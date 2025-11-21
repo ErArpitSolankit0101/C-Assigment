@@ -1,15 +1,12 @@
-/* 
-WAP to take time as an input in below given format and convert the date for format and display the result as given below
-input : "HH:MM";
-output: "HH hour MM minutes";
-*/
+// WAP to swap values of two int variable in single line arithmetic expression.
 #include<stdio.h>
 int main()
 {
-    int h,m;
-    printf("Input formate HH:MM: ");
-    scanf("%d:%d",&h,&m);
-    printf("Output formate HH hour MM minutes\n");
-    printf("%d hour %d minutes",h,m);
+    int a,b;
+    printf("Enter two numbers:");
+    scanf("%d%d",&a,&b);
+    printf("before swapping: %d %d",a,b);
+    a=a+b-(b=a);
+    printf("\nAfter swapping: %d %d",a,b);
     return 0;
 }

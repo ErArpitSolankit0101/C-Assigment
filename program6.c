@@ -1,10 +1,14 @@
-// WAP to input a character from the user and print its ASCII code.
+// WAP to swap values of two int variable
 #include<stdio.h>
 int main()
 {
-    char ch;
-    printf("Enter a Character: ");
-    scanf("%c",&ch);
-    printf("ASCII code of Character:%d",ch);
+    int a,b,c;
+    printf("Enter two number:");
+    scanf("%d%d",&a,&b);
+    printf("before swapping: %d %d",a,b);
+    c=a;
+    a=b;
+    b=c;
+    printf("\nAfter swapping: %d %d",a,b);
     return 0;
 }

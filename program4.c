@@ -1,16 +1,11 @@
-// WAP to calculate volume of cuboid .
+// WAP to print unit digit of a given number.
 #include<stdio.h>
 int main()
 {
-    int l,w,h;
-    printf("Length: ");
-    scanf("%d",&l);
-    printf("\nWidth: ");
-    scanf("%d",&w);
-    printf("\nHight: ");
-    scanf("%d",&h);
-    int vol_cub = l*w*h;
-    printf("Volume of cuboid : %d",vol_cub);
-
+    int num;
+    printf("Enter a number");
+    scanf("%d",&num);
+    int res= num%10;
+    printf("Unit Digit of a %d is %d",num,res);
     return 0;
 }

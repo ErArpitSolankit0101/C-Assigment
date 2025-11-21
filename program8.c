@@ -1,13 +1,14 @@
-// WAP to input three character from the user and display character with their ASCII codes.
+// WAP to swap values of two int variable without using a 3rd variable and without using +,- opertors
 #include<stdio.h>
 int main()
 {
-    char ch1,ch2,ch3;
-    printf("Enter three Character: ");
-    scanf("%c %c %c",&ch1,&ch2,&ch3);  //Delimiters use
-    printf("character with ASCII\n");
-    printf("%c=%d\n",ch1,ch1);
-    printf("%c=%d\n",ch2,ch2);
-    printf("%c=%d",ch3,ch3);
+    int a,b;
+    printf("Enter two number:");
+    scanf("%d%d",&a,&b);
+    printf("before swapping: %d %d",a,b);
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    printf("\nAfter swapping: %d %d",a,b);
     return 0;
 }

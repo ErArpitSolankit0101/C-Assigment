@@ -1,15 +1,14 @@
-/* 
-WAP to take date as an input in below given format and convert the date for format and display the result as given below
-input : "DD/MM/YY";(16/11/2025)
-output: "Day - DD ,Month-MM, Year- YY";(Day - 16 ,Month-11, Year- 2025)
-*/
+// WAP to swap values of two int variable without using  3rd var and arithmetic operators,
 #include<stdio.h>
 int main()
 {
-    int d,m,y;
-    printf("Enter Date format DD/MM/YY: ");
-    scanf("%d/%d/%d",&d,&m,&y);
-    printf("Output Screen....\n");
-    printf("Day - %d ,Month-%d, Year- %d",d,m,y);
+    int a,b;
+    printf("Enter two number:");
+    scanf("%d%d",&a,&b);
+    printf("before swapping: %d %d",a,b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    printf("\nAfter swapping: %d %d",a,b);
     return 0;
 }

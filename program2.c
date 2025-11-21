@@ -1,12 +1,12 @@
-// WAP to calculate circumference of circle
+//WAP to calculate size of a real constant.
 #include<stdio.h>
 int main()
 {
-    float r,cir;
-    const float pi =3.14;
-    printf("Enter a radius of circle");
-    scanf("%f",&r);
-    cir = 2*pi*r;
-    printf("Circumference of circle is : %.2f",cir);
+    int a;
+    float b;
+    printf("size of a real constant:%d",sizeof(a));
+    printf("\n%d",sizeof(b));//variable
+    printf("\n%d",sizeof(double));//datatype
+    printf("\n%d",sizeof(1.5));// constant
     return 0;
 }

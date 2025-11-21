@@ -1,16 +1,11 @@
-/*
- WAP to ask user about the cost price and sp banana par darzon. calculate profit or loss earnd upon selling 25 bananas.
-*/
+// WAP to print a given number without its last digit.
 #include<stdio.h>
 int main()
 {
-    int cp,sp;
-    float profit;
-    printf("Enter a CP of 12 Bananas: ");
-    scanf("%d",&cp);
-    printf("Enter a SP of 12 Bananas: ");
-    scanf("%d",&sp);
-    profit =(sp-cp)*25/12;
-    printf("profit is :%0.2f",profit);
+    int num;
+    printf("Enter a number");
+    scanf("%d",&num);
+    int res= num/10;
+    printf("without last Digit of a %d is %d",num,res);
     return 0;
 }

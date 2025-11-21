@@ -1,15 +1,14 @@
-// WAP to calculate simple instrest 
+/* 
+WAP with one char type variable.Assign 'A' in the variable.Now change the value of variable from 'A' to 'B' using increment operator
+*/
 #include<stdio.h>
 int main()
 {
-    int p,r,t;
-    printf("Enter Principal:");
-    scanf("%d",&p);
-    printf("\nEnter Rate:");
-    scanf("%d",&r);
-    printf("\nEnter time:");
-    scanf("%d",&t);
-    float si=(p*r*t)/100.0;
-    printf("\nSI is %.2f",si);
+    printf("print A\n");
+    char c='A';
+    printf("%c",c);
+    printf("\nprint B by increment operator");
+    char b= c++;
+    printf("\n%c",c);
     return 0;
 }
