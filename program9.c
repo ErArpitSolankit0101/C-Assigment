@@ -1,9 +1,34 @@
-// What will be the value stored in the variable x after executing following statement:
-// x=!2>-2
+// Write a program to check whether a given year is a leap year or not. LY->366days,NLY->365
 #include<stdio.h>
 int main()
 {
-  int x=!2>-2; //1>-2==1 true
-  printf("%d",x);
-  return 0;
+    int yr;
+    printf("Enter Year: ");
+    scanf("%d",&yr);
+    if (yr%100)
+    {
+        /* Non century year */
+        if (yr%4)
+        {
+            printf("%d not a Leap year",yr);
+        }
+        else
+        {
+             printf("%d a Leap year",yr);
+        }
+    }
+    else
+    {
+        /* century year */
+        if (yr%400)
+        {
+            printf("%d not a Leap year",yr);
+        }
+        else
+        {
+             printf("%d a Leap year",yr);
+        } 
+    }
+    return 0;
 }
+

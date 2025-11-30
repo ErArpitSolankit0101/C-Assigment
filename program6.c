@@ -1,13 +1,19 @@
-/*Assume price of 1 USD is INR 89.61 Write a program to take the amount in INR
-and convert it into USD.
-*/
+// Write a program to check whether a given number is a three digit number or not.
 #include<stdio.h>
 int main()
 {
-  float r,d;
-  printf("Enter amount in INR:");
-  scanf("%f",&r);
-   d= r/89.61;
-  printf("%.2f INR into %0.2f USD.",r,d);
-  return 0;
+    int a;
+    printf("Enter a number: ");
+    scanf("%d",&a);
+    if (a>99 && a<=999)
+    {
+        printf("number is 3 digit.");
+    }
+    else
+    {
+        printf("number is not 3 digit.");
+    }
+
+    
+    return 0;
 }

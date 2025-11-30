@@ -1,11 +1,19 @@
-// WAP to input a three digit number and display the sum of the digits.
+/*   Decision Control Statements
+1.Write a program to check whether a given number is positive or non positive.
+*/ 
 #include<stdio.h>
 int main()
 {
-    int x ,sum=0;
-    printf("Enter three digit number: ");
-    scanf("%d",&x);
-    sum= x/100+x/10%10+x%10;
-    printf("sum of digit:%d",sum);
+    int n;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    if (n>0)
+    {
+        printf("Positive");
+    }
+    if (n<=0)
+    {
+        printf("Non-Positive");
+    }
     return 0;
-}
+} 

@@ -1,16 +1,18 @@
-/*
-Write a program to make the last digit of a number stored in a variable as zero.
-(Example - if x=2345 then make it x=2340)
-*/
+// Write a program to check whether a given number is an even number or an odd number without using % operator.
 #include<stdio.h>
 int main()
 {
-    int a,b,c;
-    printf("Enter a number:");
+    int a;
+    printf("Enter a number: ");
     scanf("%d",&a);
-    b= a/10; //b=a/10*10;
-    c=b*10;
-    printf("%d",c); //print b
+    if (a/2*2==a)
+    {
+        printf("Even");
+    }
+    else
+    {
+        printf("Odd");
+    }
     
     return 0;
 }
