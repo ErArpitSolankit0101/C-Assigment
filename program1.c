@@ -1,11 +1,18 @@
-// WAP to input a three digit number and display the sum of the digits.
+/*  Assignment-6: More on Decision Control Statements
+1. Write a program to check whether a given number is a three digit number or not.
+*/
 #include<stdio.h>
 int main()
 {
-    int x ,sum=0;
-    printf("Enter three digit number: ");
-    scanf("%d",&x);
-    sum= x/100+x/10%10+x%10;
-    printf("sum of digit:%d",sum);
+    int b;
+    printf("Enter a number: ");
+    scanf("%d",&b);
+    if (b>99 && b<=999)
+    {
+        printf("Three digit number: %d",b);
+    }
+    else{
+        printf("Not three digit number: %d",b);
+    } 
     return 0;
 }

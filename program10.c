@@ -1,10 +1,16 @@
-/*what will be the value stored in the variable x after executing following statement:
-x=3<0&&5>0;
-*/
+//Write a program which takes the month number as an input and display number of days in that month.
 #include<stdio.h>
-int main()
-{
-  int x=3<0&&5>0;; // f and t = f(0)
-  printf("%d",x);
-  return 0;
+int main(){
+    int mounth;
+    printf("Enter mounth number: ");
+    scanf("%d",&mounth);
+    if (mounth==4 || mounth==6 || mounth==9 || mounth==11)
+    {
+        printf("30 days");
+    }
+    else if(mounth == 2)
+       printf("28 & 29 days");
+    else
+       printf("31 days");
+    return 0;
 }

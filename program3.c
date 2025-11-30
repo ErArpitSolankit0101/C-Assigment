@@ -1,14 +1,21 @@
-//  Write a program to print size of an int, a float, a char and a double type variable
+/*
+Write a program to take marks of 5 subjects from the user. Assume marks are given
+out of 100 and passing marks is 33. Now display whether the candidate passed the
+examination or failed.
+*/
 #include<stdio.h>
 int main()
 {
-    int a=10;
-    float c=10.9;
-    char x='S';
-    double z=13.8;
-    printf("\n int:%d",sizeof(a));
-    printf("\n folat:%d",sizeof(c));
-    printf("\n char : %d",sizeof(x));
-    printf("\n double:%d",sizeof(z));
+    int m1,m2,m3,m4,m5;
+    printf("Enter 5 subject marks: ");
+    scanf("%d %d %d %d %d",&m1,&m2,&m3,&m4,&m5);
+    if (m1>=33 && m2>=33 && m3>=33 && m4>=33 && m5>=33)
+    {
+        printf("Student pass.");
+    }
+    else
+    {
+        printf("Student fail");
+    }
     return 0;
 }

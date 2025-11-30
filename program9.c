@@ -1,9 +1,15 @@
-// What will be the value stored in the variable x after executing following statement:
-// x=!2>-2
+// Write a program which takes the length of the sides of a triangle as an input. Display whether the triangle is valid or not.
 #include<stdio.h>
 int main()
 {
-  int x=!2>-2; //1>-2==1 true
-  printf("%d",x);
-  return 0;
+    int a,b,c;
+    printf("Enter triangles sides: ");
+    scanf("%d %d %d",&a,&b,&c);
+    if (a+b>c && b+c>a && c+a>b)
+        printf("Valid triangle.");
+    else 
+       printf("Not a valid triangle.");
+    return 0;
 }
+
+

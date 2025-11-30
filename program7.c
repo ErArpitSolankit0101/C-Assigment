@@ -1,12 +1,15 @@
-// Write a program to take a three digit number from the user and rotate its digits by
-// one position towards the right.
+// Write a program to check whether a given number is positive, negative or zero.
 #include<stdio.h>
 int main()
 {
-  int a,b;
-  printf("enter a number:");
-  scanf("%d",&a);
-  b= a%10*100+a/10;
-  printf("Rotate number is: %d",b);
-  return 0;
+    int num;
+    printf("Enter  number :");
+    scanf("%d",&num);
+    if(num>0)
+        printf("Positive");
+    else if(num<0)
+        printf("Negative");
+    else
+       printf("Zero");
+    return 0;
 }

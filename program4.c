@@ -1,16 +1,17 @@
-/*
-Write a program to make the last digit of a number stored in a variable as zero.
-(Example - if x=2345 then make it x=2340)
-*/
+// Write a program to check whether a given alphabet is in uppercase or lowercase.
 #include<stdio.h>
 int main()
 {
-    int a,b,c;
-    printf("Enter a number:");
-    scanf("%d",&a);
-    b= a/10; //b=a/10*10;
-    c=b*10;
-    printf("%d",c); //print b
-    
+    char k;
+    printf("Enter Alophabet: ");
+    scanf("%c",&k);
+    if (k>='a' && k<='z')
+    {
+        printf("Lower case: %c",k);
+    }
+    else if (k>='A' && k<='Z')
+    {
+       printf("Upper case: %c",k); 
+    }
     return 0;
 }
